@@ -1,5 +1,5 @@
 local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
-local HWIDTABLE = loadstring(game:HttpGet("https://pastebin.com/raw/B86XdEEp"))()
+local HWIDTABLE = loadstring(game:HttpGet("https://raw.githubusercontent.com/yusufongithub/antilock/main/frxbid.lua?token=GHSAT0AAAAAACBALEP7EIOESS33VBNDANOOZBMVDPA"))()
 
 for i, v in pairs(HWIDTABLE) do
 if v == HWID then
