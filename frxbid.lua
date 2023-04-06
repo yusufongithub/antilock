@@ -1,5 +1,3 @@
-
---------------------------------------------------
 game.StarterGui:SetCore("SendNotification", {
     Title =  ".gg/shs";
     Text = "Welcome!";
@@ -9,9 +7,10 @@ game.StarterGui:SetCore("SendNotification", {
 
 _G.enable = false 
 _G.method = "MousePos"
-_G.method = "MousePos"
 
-
+if game.PlaceId == 2788229376 then
+    _G.method = "MousePos"
+end
 
 
 ---------------------------------------------------------------
@@ -86,7 +85,7 @@ end)
 ---
 
 -- minified it 
-local a=Instance.new("Beam")a.Segments=1;a.Width0=0.5;a.Width1=0.5;a.Color=ColorSequence.new(Color3.fromRGB(TracerColor))a.FaceCamera=true;local b=Instance.new("Attachment")local c=Instance.new("Attachment")a.Attachment0=b;a.Attachment1=c;a.Parent=workspace.Terrain;b.Parent=workspace.Terrain;c.Parent=workspace.Terrain
+local a=Instance.new("Beam")a.Segments=1;a.Width0=0.5;a.Width1=0.5;a.Color=ColorSequence.new(getgenv().TracerColor)a.FaceCamera=true;local b=Instance.new("Attachment")local c=Instance.new("Attachment")a.Attachment0=b;a.Attachment1=c;a.Parent=workspace.Terrain;b.Parent=workspace.Terrain;c.Parent=workspace.Terrain
 
 task.spawn(function()
     rs.RenderStepped:Connect(function()
